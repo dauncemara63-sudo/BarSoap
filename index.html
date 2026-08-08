@@ -1,1 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>🧼 BarSoap Community </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f0f13;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ================= Particles ================= */
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+header,
+.hero,
+section,
+footer{
+    position:relative;
+    z-index:2;
+}
+
+/* ================= Navbar ================= */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(15,15,20,.75);
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#ff4fb6;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff4fb6;
+}
+
+/* ================= Hero ================= */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 20px;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+    font-weight:800;
+
+}
+
+.hero span{
+
+    color:#ff4fb6;
+
+}
+
+.hero p{
+
+    color:#d7d7d7;
+
+    margin:30px auto;
+
+    max-width:700px;
+
+    font-size:20px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+border-radius:50px;
+
+background:#ff4fb6;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px #ff4fb6;
+
+}
+
+/* ================= Section ================= */
+
+section{
+
+padding:100px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:50px;
+
+color:#ff4fb6;
+
+}
+
+/* ================= About ================= */
+
+.about{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+line-height:1.9;
+
+color:#d0d0d0;
+
+}
+
+/* ================= Features ================= */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.card{
+
+background:#191923;
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(255,79,182,.4);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#ff4fb6;
+
+}
+
+/* ================= Stats ================= */
+
+.stats{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.box{
+
+background:#191923;
+
+padding:30px;
+
+width:220px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+.box h2{
+
+font-size:42px;
+
+color:#ff4fb6;
+
+}
+
+/* ================= Footer ================= */
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#888;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:44px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+</style>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<div class="logo">🧼 BarSoap 🧼</div>
+
+<nav>
+
+<a href="#about">Tentang</a>
+
+<a href="#features">Fitur</a>
+
+<a href="#stats">Statistik</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Selamat Datang di <span>BarSoap</span></h1>
+
+<p>
+
+Komunitas Discord yang seru untuk bermain game, ngobrol, event, musik, dan mencari teman baru.
+
+</p>
+
+<a class="btn" href="https://discord.gg/TUWan62W" target="_blank">
+
+Join Discord
+
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Tentang Kami</h2>
+
+<p class="about">
+
+BarSoap adalah komunitas Discord yang ramah untuk semua orang. Nikmati event seru, voice chat, leveling, musik, dan berbagai game bersama member lainnya.
+
+</p>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">Fitur Server</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>🎮 Gaming</h3>
+<p>Minecraft, Roblox, PUBG, Free Fire, Mobile Legends, dan lainnya.</p>
+</div>
+
+<div class="card">
+<h3>🎉 Event</h3>
+<p>Event komunitas dengan hadiah menarik.</p>
+</div>
+
+<div class="card">
+<h3>🎵 Music</h3>
+<p>Menikmati musik bersama dan berbagi playlist favorit.</p>
+</div>
+
+<div class="card">
+<h3>💬 Chat</h3>
+<p>Ngobrol santai, mencari teman baru, dan berbagi cerita setiap hari.</p>
+</div>
+
+<div class="card">
+<h3>📸 Media Sharing</h3>
+<p>Bagikan screenshot game, hasil karya, foto, meme, dan momen seru bersama komunitas.</p>
+</div>
+
+<div class="card">
+<h3>🗣 Voice Chat</h3>
+<p>Tempat nongkrong seru buat seru-seruan bareng, mabar, atau sekadar dengerin musik.</p>
+</div>
+
+<div class="card">
+<h3>💹 Leveling</h3>
+<p>Kumpulkan XP dari setiap aktivitasmu dan buktikan siapa yang paling aktif di server.</p>
+</div>
+
+<div class="card">
+    <h3>🎂 Birthday</h3>
+    <p>Atur tanggal lahirmu dan nikmati ucapan ulang tahun otomatis serta role spesial dari komunitas.</p>
+</div>
+
+<div class="card">
+        <h3>🎨 Custom Roles</h3>
+        <p>Pilih role minat, hobi, game favorit, dan warna agar profilmu semakin menarik.</p>
+    </div>
+
+<div class="card">
+<h3>🤖 Bot Utility</h3>
+<p>Didukung berbagai bot untuk leveling, birthday, ticket, reminder, musik, dan fitur otomatis lainnya.</p>
+</div>
+
+<div class="card">
+<h3>🛡️ Safe Community</h3>
+<p>Moderator aktif menjaga server tetap aman, nyaman, dan ramah bagi seluruh member.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2 class="title">Statistik</h2>
+
+<div class="stats">
+
+<div class="box">
+
+<h2 id="member"></h2>
+
+<p>Member</p>
+
+</div>
+
+<div class="box">
+
+<h2>24/7</h2>
+
+<p>Aktif</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 BarSoap Community
+
+
+</footer>
+
+<script>
+
+function animate(id,target){
+
+let value=0;
+
+let speed=Math.ceil(target/100);
+
+let timer=setInterval(()=>{
+
+value+=speed;
+
+if(value>=target){
+
+value=target;
+
+clearInterval(timer);
+
+}
+
+document.getElementById(id).innerHTML=value;
+
+},20);
+
+}
+
+animate("member",76);
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{value:120},
+
+color:{value:"#ff4fb6"},
+
+shape:{type:"circle"},
+
+opacity:{value:0.45},
+
+size:{value:3},
+
+line_linked:{
+
+enable:true,
+
+distance:140,
+
+color:"#ff4fb6",
+
+opacity:0.25,
+
+width:1
+
+},
+
+move:{
+
+enable:true,
+
+speed:2
+
+}
+
+},
+
+interactivity:{
+
+events:{
+
+onhover:{
+
+enable:true,
+
+mode:"grab"
+
+},
+
+onclick:{
+
+enable:true,
+
+mode:"push"
+
+}
+
+}
+
+},
+
+retina_detect:true
+
+});
+
+
+</script>
+
+</body>
+</html>
